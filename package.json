@@ -1,0 +1,23 @@
+{
+  "name": "backend_aia",
+  "version": "1.0.0",
+  "description": "Backend Test for AIA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oogenesa/AIA_Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oogenesa/AIA_Backend/issues"
+  },
+  "homepage": "https://github.com/oogenesa/AIA_Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  }
+}
