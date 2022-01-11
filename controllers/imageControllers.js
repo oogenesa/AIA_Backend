@@ -20,6 +20,7 @@ module.exports.image_get = async (req, res) => {
         str = str.substring(15);
         str = str.substring(0, str.length - 1);
         console.log(JSON.parse(str));
+        res.header("Access-Control-Allow-Origin", "*");
         res.send(JSON.parse(str));
       });
   } catch (err) {

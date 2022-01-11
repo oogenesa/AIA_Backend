@@ -11,6 +11,7 @@ const corsOptions = {
   origin: "https://aiaflicker.herokuapp.com",
   credentials: true,
 };
+("https://aiaflicker.herokuapp.com");
 // const whitelist = [
 //   "http://localhost:3000",
 //   "110.137.195.198",
