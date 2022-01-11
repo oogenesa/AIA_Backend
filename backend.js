@@ -13,7 +13,8 @@ const port = 5000;
 // };
 const whitelist = [
   "http://localhost:3000",
-  "https://aiaflicker.herokuapp.com/",
+  "110.137.195.198",
+  "https://aiaflicker.herokuapp.com",
 ];
 const corsOptions = {
   origin: function (origin, callback) {
