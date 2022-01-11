@@ -44,6 +44,6 @@ app.use(function (req, res, next) {
   next();
 });
 app.use(Routes);
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is runnin on port : ${port}`);
 });
