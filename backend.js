@@ -8,7 +8,8 @@ const app = express();
 const port = 5000;
 
 const corsOptions = {
-  origin: ["https://aiaflicker.herokuapp.com", "110.137.195.198"],
+  // origin: ["https://aiaflicker.herokuapp.com", "110.137.195.198"],
+  origin: "*",
   credentials: true,
   headers: { "Access-Control-Allow-Origin": "*" },
 };
