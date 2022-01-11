@@ -2,7 +2,7 @@ const axios = require("axios");
 
 module.exports.image_get = async (req, res) => {
   const item = req.params.item;
-  console.log(item);
+
   let tags = "";
   let str = "";
   if (item !== "all") {
@@ -19,11 +19,12 @@ module.exports.image_get = async (req, res) => {
         str = resp.data;
         str = str.substring(15);
         str = str.substring(0, str.length - 1);
-        console.log(JSON.parse(str));
+        // console.log(JSON.parse(str));
 
         res.send(JSON.parse(str));
       });
   } catch (err) {
     console.log(err);
+    res.send("error");
   }
 };

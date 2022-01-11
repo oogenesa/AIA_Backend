@@ -9,7 +9,7 @@ const port = 5000;
 
 const corsOptions = {
   origin: "https://aiaflicker.herokuapp.com",
-  // credentials: true,
+  credentials: true,
 };
 
 // const whitelist = [
