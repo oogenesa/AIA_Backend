@@ -7,10 +7,11 @@ const app = express();
 
 const port = 5000;
 
-// const corsOptions = {
-//   origin: "https://aiaflicker.herokuapp.com",
-//   credentials: true,
-// };
+const corsOptions = {
+  origin: "https://aiaflicker.herokuapp.com",
+  credentials: true,
+  headers: { "Access-Control-Allow-Origin": "*" },
+};
 
 // const whitelist = [
 //   "http://localhost:3000",
@@ -30,7 +31,7 @@ const port = 5000;
 //   },
 // };
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 app.use(Routes);
 app.listen(port, () => {
