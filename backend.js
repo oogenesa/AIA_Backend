@@ -7,11 +7,11 @@ const app = express();
 
 const port = 5000;
 
-const corsOptions = {
-  origin: "https://aiaflicker.herokuapp.com",
-  credentials: true,
-};
-("https://aiaflicker.herokuapp.com");
+// const corsOptions = {
+//   origin: "https://aiaflicker.herokuapp.com",
+//   credentials: true,
+// };
+
 // const whitelist = [
 //   "http://localhost:3000",
 //   "110.137.195.198",
@@ -30,7 +30,7 @@ const corsOptions = {
 //   },
 // };
 
-app.use(cors(corsOptions));
+app.use(cors());
 // app.use(function (req, res, next) {
 //   res.header("Access-Control-Allow-Origin", "*");
 //   res.header("Access-Control-Allow-Credentials", true);
