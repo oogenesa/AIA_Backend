@@ -8,7 +8,7 @@ const app = express();
 const port = 5000;
 
 const corsOptions = {
-  origin: "https://aiaflicker.herokuapp.com",
+  origin: ["https://aiaflicker.herokuapp.com", "110.137.195.198"],
   credentials: true,
   headers: { "Access-Control-Allow-Origin": "*" },
 };
@@ -32,7 +32,16 @@ const corsOptions = {
 // };
 
 app.use(cors(corsOptions));
-
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Credentials", true);
+  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin,X-Requested-With,Content-Type,Accept,content-type,application/json"
+  );
+  next();
+});
 app.use(Routes);
 app.listen(port, () => {
   console.log(`Server is runnin on port : ${port}`);
