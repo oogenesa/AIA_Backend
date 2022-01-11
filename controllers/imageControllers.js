@@ -15,7 +15,7 @@ module.exports.image_get = async (req, res) => {
           tags
       )
       .then((resp) => {
-        console.log(resp.data);
+        // console.log(resp.data);
         str = resp.data;
         str = str.substring(15);
         str = str.substring(0, str.length - 1);
